@@ -1,0 +1,33 @@
+#include <stdio.h>
+#include <conio.h>
+
+int main() 
+{
+    int numero, i, x = 0, y = 1,z = 1;
+
+    printf("Escriba el numero de elementos que desea: ");
+    scanf("%i",&numero);
+    switch(numero);{
+		case 1:printf("Dia1");break;
+		case 2:printf("Dia2");break;
+		case 3:printf("Dia3");break;
+		case 4:printf("Dia4");break;
+		case 5:printf("Dia5");break;
+		case 6:printf("Dia6");break;
+		case 7:printf("Dia7");break;
+	}
+	
+    printf("1 , ");
+
+    for(i=1;i<numero; i++){
+
+        z = x + y;
+        x = y;
+        y = z;
+
+        printf("%i , ",z);
+    }
+    getch();
+	return 0;
+
+}
